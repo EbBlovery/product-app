@@ -1,4 +1,22 @@
 .bgc-cms{
-	height: 100px;
+	height: 75px;
 	width: 100%;
+	background: rgb(50,65,87);
+}
+.bgc-cms-1{
+	width: 100%;
+}
+.bg-col{
+	background: rgb(50,65,87);
+	color: #fff;
+}
+.bg-col li{
+	list-style: none;
+	height: 70px;
+	line-height: 70px;
+}
+.bg-col li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
 }
