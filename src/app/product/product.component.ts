@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  private product = [];
+  private product:Product[] = [];
 
   constructor(private http:HttpClient) { }
 
@@ -15,15 +15,14 @@ export class ProductComponent implements OnInit {
       this.http.get('http://localhost:4300/php-demo/product/product_list.php')
                .subscribe(data => this.product = data)
   }
-
 }
 
 
-// export class Product{
-// 	assort: string,
-// 	description: string,
-// 	id: number,
-// 	price: number,
-// 	product_name: string,
-// 	star: number
-// }
+export class Product{
+	assort: string,
+	description: string,
+	id: number,
+	price: number,
+	product_name: string,
+	star: number
+}
