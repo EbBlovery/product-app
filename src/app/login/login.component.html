@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="col-sm-4">
+		<form [formGroup]="formModule" (submit)="onSubmit()">
+		   <div>
+			    <label>账号：<input formControlName="username" placeholder="username" type="text"></label>
+		   </div>
+		   <div>
+			    <label>密码：<input  formControlName="password" type="password"></label>
+		   </div>
+		   <div>
+		   	    <button type="submit">提交</button>
+		   </div>
+		</form>
+	</div>
+</div>
+
+
+<div>
+	{{logindata}}
+</div>
