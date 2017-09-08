@@ -59,6 +59,7 @@ export class LoginComponent implements OnInit, OnChanges {
   lonkTo(data:any){
      if(data.code == 0){
      	this.router.navigate(['navbar']);
+     	sessionStorage.setItem('token',data.token)
      }
   }
 }

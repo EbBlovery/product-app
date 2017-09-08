@@ -12,12 +12,18 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './router';
 
 import { ShareService } from './share/share.service';
+import { AdminComponent } from './admin/admin.component';
+import { ProductComponent } from './product/product.component';
+import { AddprodComponent } from './addprod/addprod.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent,
+    ProductComponent,
+    AddprodComponent
   ],
   imports: [
     BrowserModule,

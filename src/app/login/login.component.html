@@ -1,20 +1,17 @@
-<div class="container">
-	<div class="col-sm-4">
-		<form [formGroup]="formModule" (submit)="onSubmit()">
-		   <div>
-			    <label>账号：<input formControlName="username" placeholder="username" type="text"></label>
-		   </div>
-		   <div>
-			    <label>密码：<input  formControlName="password" type="password"></label>
-		   </div>
-		   <div>
-		   	    <button type="submit">提交</button>
-		   </div>
-		</form>
+<div class="container form-login bg-primary">
+    <div class="row">
+		<div class="col-sm-5 col-md-offset-5">
+			<form [formGroup]="formModule" (submit)="onSubmit()">
+			   <div class="form-group">
+				    <label>账号：<input class="form-control" formControlName="username" placeholder="username" type="text"></label>
+			   </div>
+			   <div class="form-group">
+				    <label>密码：<input class="form-control" formControlName="password" type="password" placeholder="password"></label>
+			   </div>
+			   <div class="form-group">
+			   	    <button class="btn btn-warning" type="submit">提交</button>
+			   </div>
+			</form>
+        </div>
 	</div>
-</div>
-
-
-<div>
-	{{logindata}}
 </div>
