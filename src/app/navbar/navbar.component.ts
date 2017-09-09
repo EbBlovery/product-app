@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   	if(!sessionStorage.getItem('token')){
         this.router.navigate(['login'])
   	}
+  	
   }
 
 }

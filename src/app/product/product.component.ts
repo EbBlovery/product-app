@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  private product:Product[] = [];
+  product:any;
 
   constructor(private http:HttpClient) { }
 
@@ -18,11 +18,11 @@ export class ProductComponent implements OnInit {
 }
 
 
-export class Product{
-	assort: string,
-	description: string,
-	id: number,
-	price: number,
-	product_name: string,
-	star: number
-}
+// interface Product{
+// 	assort: string,
+// 	description: string,
+// 	id: number,
+// 	price: number,
+// 	product_name: string,
+// 	star: number
+// }

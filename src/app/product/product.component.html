@@ -1,3 +1,28 @@
-<p>
-  product works!
-</p>
+<div>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+			    <th>列表</th>
+				<th>商品名称</th>
+				<th>描述</th>
+				<th>星级</th>
+				<th>价格</th>
+				<th>分类</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of product;let i = index">
+			    <td>{{i+1}}</td>
+				<td>{{item.product_name}}</td>
+				<td>{{item.description}}</td>
+				<td>{{item.star}}</td>
+				<td>{{item.price}}</td>
+				<td>{{item.assort}}</td>
+				<td><button type="button" class="btn btn-danger">修改</button></td>
+			</tr>
+		</tbody>
+		<div>
+		</div>
+	</table>
+</div>
