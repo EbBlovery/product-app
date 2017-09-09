@@ -35,6 +35,9 @@ export class ProductComponent implements OnInit {
   handleDelete(item){
      
   }
+  isShow(val){
+      this.show = val
+  }
 
 }
 

@@ -21,8 +21,8 @@
           <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" [(ngModel)]="product.assort">
        </div>
        <div>
-          <button class="btn btn-warning">关闭</button>
-          <button class="btn btn-success">保存</button>
+          <button (click)="handleClose()" class="btn btn-warning">关闭</button>
+          <button (click)="handleSave()" class="btn btn-success">保存</button>
        </div>
    </div>
 </div>

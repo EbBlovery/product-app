@@ -8,6 +8,12 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 export class ProChangeComponent implements OnInit {
   @Input()
   product:any;
+
+  @Output()
+  eventChange:EventEmitter<boolean> = new EventEmitter();
+
+  private isshow:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +21,9 @@ export class ProChangeComponent implements OnInit {
 
 
   handleClose(){
-
+    this.eventChange.emit(this.isshow)
   }
-
+  handleSave(){
+  	this.eventChange.emit(this.isshow)
+  }
 }

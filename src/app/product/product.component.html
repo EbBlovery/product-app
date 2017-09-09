@@ -31,5 +31,5 @@
 </div>
 
 <div class="change" *ngIf="show">
-	<app-pro-change [product]="changeProduct"></app-pro-change>
+	<app-pro-change [product]="changeProduct" (eventChange)="isShow($event)"></app-pro-change>
 </div>
