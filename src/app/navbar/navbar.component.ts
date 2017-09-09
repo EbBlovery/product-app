@@ -7,12 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  private name:string;
   constructor(private router:Router) { }
 
   ngOnInit() {
   	if(!sessionStorage.getItem('token')){
-        this.router.navigate(['login'])
+        this.router.navigate(['login']);
+        this.name = sessionStorage.getItem('name')
   	}
   	
   }

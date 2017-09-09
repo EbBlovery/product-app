@@ -17,9 +17,6 @@ const routes: Routes = [
    	  path: 'navbar',
    	  component: NavbarComponent,
    	  children: [{
-   	  	  path: 'navbar/*',
-   	  	  redirectTo: '/navbar/admin'
-   	  },{
           path: 'admin',
           component: AdminComponent
       },{
