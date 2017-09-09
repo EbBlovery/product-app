@@ -15,6 +15,7 @@ import { ShareService } from './share/share.service';
 import { AdminComponent } from './admin/admin.component';
 import { ProductComponent } from './product/product.component';
 import { AddprodComponent } from './addprod/addprod.component';
+import { ProChangeComponent } from './pro-change/pro-change.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AddprodComponent } from './addprod/addprod.component';
     LoginComponent,
     AdminComponent,
     ProductComponent,
-    AddprodComponent
+    AddprodComponent,
+    ProChangeComponent
   ],
   imports: [
     BrowserModule,

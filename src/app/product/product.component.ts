@@ -8,6 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductComponent implements OnInit {
   product:any;
+  
+  private show:boolean = false;
 
   constructor(private http:HttpClient) { }
 
@@ -15,7 +17,11 @@ export class ProductComponent implements OnInit {
       this.http.get('http://localhost:4300/php-demo/product/product_list.php')
                .subscribe(data => this.product = data)
   }
+  handleChange(item){
+     this.show = !this.show;
+  }
 }
+
 
 
 // interface Product{
