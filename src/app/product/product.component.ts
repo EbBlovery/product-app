@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ShareService } from '../share/share.service';
+
 
 @Component({
   selector: 'app-product',
@@ -13,11 +15,15 @@ export class ProductComponent implements OnInit {
 
   changeProduct: any;
 
-  constructor(private http:HttpClient) { }
+  constructor(
+    // private http:HttpClient,
+    private http: ShareService
+  ) { }
 
   ngOnInit():any {
-      this.http.get('http://localhost:4300/php-demo/product/product_list.php')
-               .subscribe(data => this.product = data)
+      // this.http.get('http://localhost:4300/php-demo/product/product_list.php')
+      //          .subscribe(data => this.product = data)
+      this.http.getProduct().subscribe(data=> this.product = data)
   }
   handleChange(item){
      this.show = !this.show;
@@ -26,7 +32,9 @@ export class ProductComponent implements OnInit {
   handleSave(){
      alert('wrwerwr')
   }
-
+  handleDelete(item){
+     
+  }
 
 }
 

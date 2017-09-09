@@ -7,8 +7,5 @@
 	position: fixed;
 	top: 50px;
 	width: 50%;
-	height: 100%;
-    margin:0 auto;
-    background: #fff;
-    border-radius: 10px;
+	padding: 30px 30px;
 }

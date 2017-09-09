@@ -12,11 +12,14 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './router';
 
 import { ShareService } from './share/share.service';
+
 import { AdminComponent } from './admin/admin.component';
 import { ProductComponent } from './product/product.component';
 import { AddprodComponent } from './addprod/addprod.component';
 import { ProChangeComponent } from './pro-change/pro-change.component';
 import { ChartComponent } from './chart/chart.component';
+
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,7 @@ import { ChartComponent } from './chart/chart.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ShareService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
