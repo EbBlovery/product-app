@@ -11,7 +11,7 @@ export class AdminComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-  	
+  	 this.name = sessionStorage.getItem('username');
   }
 
 }

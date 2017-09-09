@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit, OnChanges {
       };
      	this.router.navigate(['navbar/admin'],navigationExtras);
      	sessionStorage.setItem('token',data.token);
-      sessionStorage.setItem('name',data.name);
+      sessionStorage.setItem('username',data.username);
 
       console.log(data)
      }
