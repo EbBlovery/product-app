@@ -3,6 +3,8 @@ import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 // import { ShareService } from '../share/share.service';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ShareService } from '../share/share.service';
+
 
 interface Person {
     code: number;
@@ -25,7 +27,7 @@ export class LoginComponent implements OnInit, OnChanges {
   	 password: new FormControl('')
   });
   constructor(
-     private http:HttpClient,
+     private getService:ShareService,
      private router:Router
   ) { 
       
@@ -35,26 +37,10 @@ export class LoginComponent implements OnInit, OnChanges {
       
   }
   ngOnChanges() {
-      if(this.code == 0){
-          console.log(12313131)
-      } 
-  }
-  transFormRequestJson(data:any){
-      const str = [];
-      for(const k in data){
-         if(k){
-            str.push(encodeURIComponent(k) + '=' + encodeURIComponent(data[k]));
-         }
-      }
-      return str.join('&');
+
   }
   onSubmit(){
-  	  var body = {'username':this.formModule.value.username,'password':this.formModule.value.password};
-      var postdata = this.transFormRequestJson(body);
-
-
-  	  this.http.post(`http://localhost:4300/php-demo/login.php`,postdata,{headers:new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded;charset=UTF-8')})
-  	            .subscribe(data => this.lonkTo(data))
+      this.getService.getLogin(this.formModule.value.username,this.formModule.value.password).subscribe(data => this.lonkTo(data))
   }
   lonkTo(data:any){
      if(data.code == 0){

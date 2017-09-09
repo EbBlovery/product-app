@@ -17,13 +17,13 @@ export class ProductComponent implements OnInit {
 
   constructor(
     // private http:HttpClient,
-    private http: ShareService
+    private getService: ShareService
   ) { }
 
   ngOnInit():any {
       // this.http.get('http://localhost:4300/php-demo/product/product_list.php')
       //          .subscribe(data => this.product = data)
-      this.http.getProduct().subscribe(data=> this.product = data)
+      this.getService.getProduct().subscribe(data=> this.product = data)
   }
   handleChange(item){
      this.show = !this.show;
