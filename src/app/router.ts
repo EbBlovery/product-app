@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProductComponent } from './product/product.component';
 import { AddprodComponent } from './addprod/addprod.component';
+import { ChartComponent } from './chart/chart.component';
+
 
 const routes: Routes = [
    {path: '',redirectTo: '/login', pathMatch: 'full'},
@@ -26,6 +28,9 @@ const routes: Routes = [
       },{
       	  path: 'addprod',
           component: AddprodComponent
+      },{
+          path: 'chartlist',
+          component: ChartComponent
       }]
    }
 ];

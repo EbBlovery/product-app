@@ -11,6 +11,8 @@ export class ProductComponent implements OnInit {
   
   private show:boolean = false;
 
+  changeProduct: any;
+
   constructor(private http:HttpClient) { }
 
   ngOnInit():any {
@@ -19,7 +21,13 @@ export class ProductComponent implements OnInit {
   }
   handleChange(item){
      this.show = !this.show;
+     this.changeProduct = item
   }
+  handleSave(){
+     alert('wrwerwr')
+  }
+
+
 }
 
 

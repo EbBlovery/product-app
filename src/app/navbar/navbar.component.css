@@ -1,18 +1,18 @@
 .bgc-cms{
-	height: 75px;
+	height: 50px;
 	width: 100%;
 	background: rgb(50,65,87);
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 10;
 }
 .bgc-cms-1{
 	width: 100%;
 	position: fixed;
-	top: 75px;
+	top: 50px;
 	left: 0;
-	z-index: 1000;
+	z-index: 10;
 }
 .bg-col{
 	background: rgb(50,65,87);

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pro-change',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pro-change.component.css']
 })
 export class ProChangeComponent implements OnInit {
-
+  @Input()
+  product:any;
   constructor() { }
 
   ngOnInit() {
