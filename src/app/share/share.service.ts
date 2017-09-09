@@ -17,6 +17,10 @@ export class ShareService {
       return this.http.post(`http://localhost:4300/php-demo/login.php`,postdata,{headers:new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded;charset=UTF-8')})
   } 
 
+  addProduct(obj:any){
+      var data = this.transFormRequestJson(obj);
+      return this.http.post('http://localhost:4300/php-demo/product/add_product.php',data,{headers:new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded;charset=UTF-8')})
+  }
 
   private handleError(error: any):Promise<any>{
       console.log('an error occured',error);

@@ -1,3 +1,27 @@
-<p>
-  addprod works!
-</p>
+<div > 
+   <form [formGroup]="formModule" (submit)="onAddProd()">
+       <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1">商品名称</span>
+          <input formControlName="product_name" type="text" class="form-control" aria-describedby="sizing-addon1">
+       </div>
+       <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1">商品描述</span>
+          <input formControlName="description" type="text" class="form-control" aria-describedby="sizing-addon1">
+       </div>
+       <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1">商品价格</span>
+          <input formControlName="price" type="number" class="form-control" aria-describedby="sizing-addon1">
+       </div>
+       <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1">商品星级</span>
+          <input formControlName="star" type="number" class="form-control" aria-describedby="sizing-addon1">
+       </div>
+       <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1">商品类型</span>
+          <input formControlName="assort" type="text" class="form-control" aria-describedby="sizing-addon1">
+       </div>
+       <div>
+          <button type="submit" class="btn btn-warning">添加</button>
+       </div>
+   </form>
+</div>
