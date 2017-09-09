@@ -27,7 +27,12 @@ export class AddprodComponent implements OnInit {
      
   }
   onAddProd(){
-  	 this.getService.addProduct(this.formModule.value).subscribe(data=>console.log(data))
+  	var t = this.formModule.value;
+  	if(t.product_name &&t.price &&t.star &&t.description &&t.assort){
+        this.getService.addProduct(this.formModule.value).subscribe(data=>console.log(data))
+  	}else{
+  		
+  	}
   }
 
 }

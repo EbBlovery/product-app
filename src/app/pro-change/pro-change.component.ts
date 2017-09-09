@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { ShareService } from '../share/share.service';
 
 @Component({
   selector: 'app-pro-change',
@@ -14,9 +15,10 @@ export class ProChangeComponent implements OnInit {
 
   private isshow:boolean = false;
 
-  constructor() { }
+  constructor(private getService:ShareService) { }
 
   ngOnInit() {
+
   }
 
 
@@ -24,6 +26,7 @@ export class ProChangeComponent implements OnInit {
     this.eventChange.emit(this.isshow)
   }
   handleSave(){
-  	this.eventChange.emit(this.isshow)
+  	// this.eventChange.emit(this.isshow)
+     this.getService.updateProduct(this.product).subscribe(data=>console.log(data));
   }
 }
