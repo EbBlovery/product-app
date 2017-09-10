@@ -23,10 +23,14 @@ export class ShareService {
   }
 
   updateProduct(obj){
-     console.log(obj);
       var data = this.transFormRequestJson(obj);
       return this.http.post('http://localhost:4300/php-demo/updateFile/update.php',data,{headers:new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded;charset=UTF-8')})
       
+  }
+
+  getRegister(obj:any){
+      var data = this.transFormRequestJson(obj);
+      return this.http.post('http://localhost:4300/php-demo/register.php',data,{headers:new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded;charset=UTF-8')})
   }
 
   private handleError(error: any):Promise<any>{

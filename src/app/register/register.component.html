@@ -1,3 +1,17 @@
-<p>
-  register works!
-</p>
+<div class="container form-login bg-primary">
+    <div class="row">
+		<div class="col-sm-5 col-md-offset-5">
+			<form [formGroup]="formModule" (submit)="onSubmit()">
+			   <div class="form-group">
+				    <label>账号：<input class="form-control" formControlName="username" placeholder="username" type="text"></label>
+			   </div>
+			   <div class="form-group">
+				    <label>密码：<input class="form-control" formControlName="password" type="password" placeholder="password"></label>
+			   </div>
+			   <div class="form-group">
+			   	    <button class="btn btn-warning" type="submit">注册</button>
+			   </div>
+			</form>
+        </div>
+	</div>
+</div>

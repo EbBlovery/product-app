@@ -6,10 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ShareService } from '../share/share.service';
 
 
-interface Person {
-    code: number;
-    token: string;
-}
+
 
 @Component({
   selector: 'app-login',
