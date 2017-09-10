@@ -30,7 +30,11 @@ export class ProductComponent implements OnInit {
      
   }
   isShow(val){
-      this.show = val
+      this.show = val;
+  }
+  handleChange(item:any){
+      this.show = !this.show;
+      this.changeProduct = item;
   }
 }
 

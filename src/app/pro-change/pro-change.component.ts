@@ -26,7 +26,7 @@ export class ProChangeComponent implements OnInit {
     this.eventChange.emit(this.isshow)
   }
   handleSave(){
-  	// this.eventChange.emit(this.isshow)
+  	this.eventChange.emit(this.isshow);
      this.getService.updateProduct(this.product).subscribe(data=>console.log(data));
   }
 }

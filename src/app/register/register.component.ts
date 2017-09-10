@@ -32,6 +32,7 @@ export class RegisterComponent implements OnInit {
   }
   isRouterLogin(data:any){
       if(data.code === 0){
+      	 alert('注册完成');
          this.router.navigate(['login']);
       }else if(data.code === 1){
          this.isSecrectTrue = true;
