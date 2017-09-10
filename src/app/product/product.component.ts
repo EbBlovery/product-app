@@ -21,13 +21,7 @@ export class ProductComponent implements OnInit {
   ) { }
 
   ngOnInit():any {
-      // this.http.get('http://localhost:4300/php-demo/product/product_list.php')
-      //          .subscribe(data => this.product = data)
       this.getService.getProduct().subscribe(data=> this.product = data)
-  }
-  handleChange(item){
-     this.show = !this.show;
-     this.changeProduct = item
   }
   handleSave(){
      alert('wrwerwr')
@@ -38,7 +32,6 @@ export class ProductComponent implements OnInit {
   isShow(val){
       this.show = val
   }
-
 }
 
 
