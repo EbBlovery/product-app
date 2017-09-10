@@ -6,6 +6,9 @@
 	top: 0;
 	left: 0;
 	z-index: 10;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
 }
 .bgc-cms-1{
 	width: 100%;
