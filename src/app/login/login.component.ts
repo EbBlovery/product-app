@@ -51,6 +51,12 @@ export class LoginComponent implements OnInit, OnChanges {
       console.log(data)
      }
   }
+  handleRegister(){
+     this.router.navigate(['register']);
+  }
+
+
+
 }
 
 export class LoginData {

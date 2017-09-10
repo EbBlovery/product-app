@@ -8,6 +8,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ProductComponent } from './product/product.component';
 import { AddprodComponent } from './addprod/addprod.component';
 import { ChartComponent } from './chart/chart.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,9 @@ const routes: Routes = [
           path: 'chartlist',
           component: ChartComponent
       }]
+   },{
+      path: 'register',
+      component: RegisterComponent
    }
 ];
 @NgModule({
