@@ -40,6 +40,6 @@
 }
 
 .scrollers{
+	margin-left: 15.5%;
 	overflow-y: scroll;
-	clear: both;
 }
