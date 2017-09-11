@@ -15,7 +15,5 @@ export class NavbarComponent implements OnInit {
         this.router.navigate(['login']);
         this.username = sessionStorage.getItem('username')
   	}
-  	
   }
-
 }

@@ -2,25 +2,26 @@
 	height: 50px;
 	width: 100%;
 	background: rgb(50,65,87);
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
 	color: #fff;
 	font-size: 20px;
 	line-height: 50px;
 }
 .bgc-cms-1{
 	width: 100%;
-	position: fixed;
-	top: 50px;
-	left: 0;
-	z-index: 10;
+	height: 100%;
 }
 .bg-col{
 	background: rgb(50,65,87);
+	position: fixed;
+	top: 0;
+	left: 0;
 	color: #fff;
-	height: 600px;
+	height: 100%;
+}
+.bg-col ul{
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 .bg-col li{
 	list-style: none;
@@ -39,8 +40,6 @@
 }
 
 .scrollers{
-	position: absolute;
-	height: 100%;
-	margin-left: 220px;
 	overflow-y: scroll;
+	clear: both;
 }

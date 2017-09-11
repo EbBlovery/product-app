@@ -1,11 +1,6 @@
-
-<div class="bgc-cms container">
-	<p>商品后台管理系统 <span>{{username}}</span></p>
-</div>
-
 <div class="container bgc-cms-1">
 	<div class="row">
-		<div class="col-sm-2 bg-col">
+		<div class="col-md-3 bg-col">
 			<ul>
 			    <li><a class="glyphicon glyphicon-user" routerLink="homepage">首页</a></li>
 				<li><a class="glyphicon glyphicon-user" routerLink="admin">管理员</a></li>
@@ -14,7 +9,10 @@
 				<li><a class="glyphicon glyphicon-list-alt" routerLink="chartlist">图表</a></li>
 			</ul>
 		</div>
-		<div class="col-sm-10 scrollers">
+		<div class="col-md-9 scrollers">
+			<div class="bgc-cms">
+				<app-menubar></app-menubar>
+			</div>
 			<router-outlet></router-outlet>
 		</div>
 	</div>

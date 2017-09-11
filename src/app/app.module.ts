@@ -21,6 +21,7 @@ import { ChartComponent } from './chart/chart.component';
 import { RegisterComponent } from './register/register.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ErrorComponent } from './error/error.component';
+import { MenubarComponent } from './menubar/menubar.component';
 
 
 
@@ -36,7 +37,8 @@ import { ErrorComponent } from './error/error.component';
     ChartComponent,
     RegisterComponent,
     HomepageComponent,
-    ErrorComponent
+    ErrorComponent,
+    MenubarComponent
   ],
   imports: [
     BrowserModule,
