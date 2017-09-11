@@ -9,6 +9,9 @@ import { ProductComponent } from './product/product.component';
 import { AddprodComponent } from './addprod/addprod.component';
 import { ChartComponent } from './chart/chart.component';
 import { RegisterComponent } from './register/register.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ErrorComponent } from './error/error.component';
+
 
 
 const routes: Routes = [
@@ -18,6 +21,9 @@ const routes: Routes = [
    	  path: 'navbar',
    	  component: NavbarComponent,
    	  children: [{
+          path: 'homepage',
+          component: HomepageComponent
+      },{
           path: 'admin',
           component: AdminComponent
       },{
@@ -33,6 +39,9 @@ const routes: Routes = [
    },{
       path: 'register',
       component: RegisterComponent
+   },{
+      path:"**",
+      component: ErrorComponent
    }
 ];
 @NgModule({

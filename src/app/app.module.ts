@@ -19,6 +19,8 @@ import { AddprodComponent } from './addprod/addprod.component';
 import { ProChangeComponent } from './pro-change/pro-change.component';
 import { ChartComponent } from './chart/chart.component';
 import { RegisterComponent } from './register/register.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -32,7 +34,9 @@ import { RegisterComponent } from './register/register.component';
     AddprodComponent,
     ProChangeComponent,
     ChartComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomepageComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
